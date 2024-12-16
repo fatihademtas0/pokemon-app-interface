@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": "./", // Kök klasörü temel al
+    "paths": {
+      "@services/*": ["services/*"] // services klasörü için alias
+    }
   }
 }
